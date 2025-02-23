@@ -21,5 +21,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Show Files and Directories Before Build
+        run: ls -R
+
       - name: Build App
         run: npm run build
+
+      - name: Show Files and Directories after Build
+        run: ls -R
